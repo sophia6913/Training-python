@@ -4,10 +4,11 @@ def is_perfect(num):
 	for i in range(1, (num//2)+1):
 		if num % i == 0:
 			sum += i
-	if sum == num:
+	return sum == num
+'''	if sum == num:
 		return 'True'
 	else:
 		return 'False'
+'''
 
-
-is_perfect(28)
+#is_perfect(28)
