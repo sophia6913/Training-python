@@ -1,12 +1,8 @@
 import sys
-
+count = 3
 with open(sys.argv[1]) as f:
-	a = []
 	b = [0, 0, 0]
-	count = 3
-	for line in f:
-		integer = int(line)
-		a.append(integer)
+	a = [int(line) for line in f]
 
 flag = 0
 while not flag:
